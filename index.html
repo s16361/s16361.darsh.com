@@ -16,24 +16,34 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .container {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 50px;
+            width: 90%;
+            height: 90vh;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
-            backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
-        h1 {
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            font-size: 3em;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        iframe {
+            flex: 1;
+            border: none;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>xvvx.bio.link</h1>
+        <div class="header">xvvx.bio.link</div>
+        <iframe src="https://xvvx.bio.link" title="xvvx.bio.link"></iframe>
     </div>
 </body>
 </html>
